@@ -10,10 +10,45 @@
   font-family: sans-serif;
 }
 
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 63px;
+}
+h2 {
+  font-family: $titlefont;
+  font-size: 37px;
+  margin-bottom: 18px;
+}
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  padding : 17px 40px;
+  background-color: $primecolor;
+  margin : 20px;
+  color: #FFFFFF;
+}
+
+.top {
+  height: 58px;
+  width: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primecolor;
+  position: absolute;
+  right: 0;
+  a {
+    color: $textcolor1;
+    text-align: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
 }

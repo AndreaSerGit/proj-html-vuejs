@@ -10,12 +10,49 @@
   font-family: sans-serif;
 }
 
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 63px;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 37px;
+  margin-bottom: 18px;
+}
+
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  padding: 17px 40px;
+  background-color: #40C4FF;
+  margin: 20px;
+  color: #FFFFFF;
+}
+
+.top {
+  height: 58px;
+  width: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #40C4FF;
+  position: absolute;
+  right: 0;
+}
+.top a {
+  color: #FFFFFF;
+  text-align: center;
+}
+.top a p {
+  margin-bottom: 0;
 }
 
 header {
@@ -70,4 +107,136 @@ header .layover nav .icons a {
 header .layover nav .icons a i {
   margin: 10px;
   font-size: 20px;
+}
+header .layover .jumbo {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px);
+  text-align: center;
+}
+header .layover .jumbo .mainBox {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .layover .jumbo .mainBox h1 {
+  margin: 20px;
+}
+header .layover .jumbo .mainBox p {
+  font-size: 16px;
+  margin: 20px;
+  line-height: 30px;
+}
+header .layover .jumbo .navIcons {
+  margin: 10px;
+}
+header .layover .jumbo .navIcons i {
+  color: #0707071A;
+  margin: 5px;
+  font-size: 15px;
+}
+header .layover .jumbo .navIcons .active {
+  color: #FFFFFF;
+}
+
+main {
+  width: 100%;
+}
+main .choice {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+main .choice ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .choice ul li {
+  display: inline-block;
+  height: 200px;
+  width: 160px;
+  background-color: #F2F8FC;
+}
+main .choice ul li img {
+  margin-bottom: 20px;
+}
+main .choice ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .tutor {
+  width: 100%;
+  padding: 30px 30px 0 30px;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+main .tutor p {
+  font-size: 17px;
+  margin-bottom: 17px;
+}
+main .tutor a {
+  color: #40C4FF;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+main .tutor .top {
+  bottom: 30%;
+}
+main .tutor .top a {
+  color: #FFFFFF;
+  text-align: center;
+}
+main .tutor .top a p {
+  margin-bottom: 0;
+}
+main .two {
+  padding: 30px;
+  display: flex;
+  position: relative;
+}
+main .two .top {
+  bottom: 10%;
+}
+main .two .globe {
+  margin-top: 160px;
+  width: 50%;
+}
+main .two .globe img {
+  width: 100%;
+}
+main .two .empowering {
+  margin-top: 100px;
+  width: 40%;
+  padding: 20px;
+}
+main .two .empowering p {
+  font-size: 17px;
+  line-height: 26px;
+}
+main .two .empowering .number {
+  display: flex;
+  width: 100%;
+}
+main .two .empowering .number .user, main .two .empowering .number .event {
+  font-family: "Merriweather", serif;
+  width: 50%;
+  color: #40C4FF;
+}
+main .two .empowering .number .user h3, main .two .empowering .number .event h3 {
+  font-size: 48px;
+  margin: 10px;
+}
+main .two .empowering .number .user p, main .two .empowering .number .event p {
+  font-size: 18px;
+  font-weight: 700;
 }
