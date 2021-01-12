@@ -1,1 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+#container {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("../img/course-9-f-img.jpg");
+  width: 100%;
+  height: 675px;
+  color: #FFFFFF;
+  position: relative;
+}
+header .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header .layover nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .layover nav .logo {
+  width: 25%;
+}
+header .layover nav .logo img {
+  width: 166px;
+}
+header .layover nav .links {
+  width: 50%;
+}
+header .layover nav .links ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .layover nav .links ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+header .layover nav .links ul li a {
+  color: #FFFFFF;
+}
+header .layover nav .icons a {
+  color: #FFFFFF;
+}
+header .layover nav .icons a i {
+  margin: 10px;
+  font-size: 20px;
+}

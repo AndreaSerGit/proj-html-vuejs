@@ -1,0 +1,55 @@
+header {
+  @include backgroundSize;
+  background-image: url('../img/course-9-f-img.jpg');
+  width: 100%;
+  height: 675px;
+  color: $textcolor1;
+  position: relative;
+  .layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    nav {
+      height: 100px;
+      width: $widthauto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .logo{
+        width: 25%;
+        img {
+          width: 166px;
+        }
+      }
+      .links {
+        width: 50%;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            display: inline-block;
+            font-size: 14px;
+            a {
+              color: $textcolor1;
+            }
+          }
+        }
+      }
+      .icons {
+        a {
+          color: $textcolor1;
+          i {
+            margin: 10px;
+            font-size: 20px;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
