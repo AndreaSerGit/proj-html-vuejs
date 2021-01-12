@@ -96,4 +96,34 @@ main {
       }
     }
   }
+  .three {
+    @include backgroundSize;
+    background-position: center;
+    background-image: url('../img/h5-parallax-img-1.png');
+    background-attachment: fixed;
+    width: $widthauto;
+    height: 640px;
+    padding: 120px 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $textcolor1;
+    }
+    .student {
+      color: $textcolor1;
+      h3 {
+        font-family: $titlefont;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+    }
+  }
 }

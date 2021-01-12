@@ -55,6 +55,14 @@ a {
   margin-bottom: 0;
 }
 
+i {
+  color: #FFFFFF80;
+}
+
+.active {
+  color: #FFFFFF;
+}
+
 header {
   background-size: cover;
   -webkit-background-size: cover;
@@ -239,4 +247,37 @@ main .two .empowering .number .user h3, main .two .empowering .number .event h3 
 main .two .empowering .number .user p, main .two .empowering .number .event p {
   font-size: 18px;
   font-weight: 700;
+}
+main .three {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../img/h5-parallax-img-1.png");
+  background-attachment: fixed;
+  width: 100%;
+  height: 640px;
+  padding: 120px 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .three p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+main .three .student {
+  color: #FFFFFF;
+}
+main .three .student h3 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+main .three .student h5 {
+  font-size: 14px;
 }
