@@ -58,9 +58,16 @@ a {
 i {
   color: #FFFFFF80;
 }
+i:hover {
+  cursor: pointer;
+}
 
 .active {
   color: #FFFFFF;
+}
+
+.selected {
+  border-left: 7px solid #40C4FF;
 }
 
 header {
@@ -280,4 +287,33 @@ main .three .student h3 {
 }
 main .three .student h5 {
   font-size: 14px;
+}
+main .four {
+  width: 100%;
+  padding: 30px;
+  height: 680px;
+  display: flex;
+}
+main .four .list {
+  width: 35%;
+}
+main .four .list li {
+  width: 290px;
+  height: 76px;
+  background-color: #fcfcfc;
+  color: #40C4FF;
+  padding-left: 25px;
+  border: 1px solid gray;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+main .four .list li:last-child {
+  border-bottom: 1px solid gray;
+}
+main .four .list .selected {
+  border-left: 7px solid #40C4FF;
+}
+main .four .learning {
+  width: 65%;
 }

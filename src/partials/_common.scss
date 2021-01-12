@@ -54,7 +54,14 @@ a {
 }
 i {
   color: #FFFFFF80;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .active {
   color: #FFFFFF;
+}
+
+.selected {
+  border-left: 7px solid $primecolor;
 }

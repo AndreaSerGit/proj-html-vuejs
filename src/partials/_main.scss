@@ -126,4 +126,33 @@ main {
       }
     }
   }
+  .four {
+    width: $widthauto;
+    padding: $standardPadding;
+    height: 680px;
+    display: flex;
+    .list {
+      width: 35%;
+      li {
+        width: 290px;
+        height: 76px;
+        background-color: #fcfcfc;
+        color: $primecolor;
+        padding-left: 25px;
+        border: 1px solid gray;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        &:last-child {
+          border-bottom: 1px solid gray;
+        }
+      }
+      .selected {
+        border-left: 7px solid $primecolor;
+      }
+    }
+    .learning {
+      width: 65%;
+    }
+  }
 }
