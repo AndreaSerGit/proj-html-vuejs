@@ -44,8 +44,9 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #40C4FF;
-  position: absolute;
+  position: fixed;
   right: 0;
+  z-index: 99;
 }
 .top a {
   color: #FFFFFF;
@@ -169,6 +170,7 @@ header .layover .jumbo .navIcons .active {
 }
 
 main {
+  position: relative;
   width: 100%;
 }
 main .choice {
@@ -215,23 +217,10 @@ main .tutor a {
   font-weight: 700;
   display: block;
 }
-main .tutor .top {
-  bottom: 30%;
-}
-main .tutor .top a {
-  color: #FFFFFF;
-  text-align: center;
-}
-main .tutor .top a p {
-  margin-bottom: 0;
-}
 main .two {
   padding: 30px;
   display: flex;
   position: relative;
-}
-main .two .top {
-  bottom: 10%;
 }
 main .two .globe {
   margin-top: 160px;

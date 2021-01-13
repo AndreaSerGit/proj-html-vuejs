@@ -1,4 +1,5 @@
 main {
+  position: relative;
   width: $widthauto;
   .choice {
     width: 100%;
@@ -44,24 +45,11 @@ main {
       font-weight: 700;
       display: block;
     }
-    .top {
-      bottom: 30%;
-      a {
-        color: $textcolor1;
-        text-align: center;
-        p {
-          margin-bottom: 0;
-        }
-      }
-    }
   }
   .two {
     padding: $standardPadding;
     display: flex;
     position: relative;
-    .top {
-      bottom: 10%;
-    }
     .globe {
       margin-top: 160px;
       width: 50%;
@@ -380,4 +368,5 @@ main {
       }
     }
   }
+  
 }
