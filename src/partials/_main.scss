@@ -187,91 +187,196 @@ main {
     }
   }
   .five {
-    padding: $standardPadding;
     @include backgroundSize;
     background-image: url('../img/page-background-img.png');
-    .popular {
-      padding-top: 30px;
-      width: 70%;
-      margin: auto;
-      text-align: center;
-      h2 {
-        font-size: 45px;
-      }
-      p {
-        font-size: 17px;
-        color: #595959;
-      }
-    }
-    .specialities {
-      padding-top: 100px;
-      display: flex;
-      justify-content: space-around;
-      .card {
-        background-color: $backgroundcolor1;
-        width: 340px;
-        height: 460px;
-        margin: 20px;
-        border: 1px solid #f2f2f2;
-        img {
-          width: 100%;
+    .five-top {
+      padding: $standardPadding;
+      border-bottom: 1px solid lightgrey;
+      .popular {
+        padding-top: 30px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        h2 {
+          font-size: 45px;
         }
-        .info {
-          padding: 14px;
-          position: relative;
-          h4 {
-            font-family: $titlefont;
-            font-size: 15px;
-            margin: 14px 0 10px;
-          }
-          h6 {
-            font-size: 14px;
-            color: #B9B9B9;
-            margin-bottom: 14px;
-          }
-          p {
-            font-size: 15px;
-            color: grey;
-            line-height: 26px;
-          }
-          .cost {
-            position: absolute;
-            background-color: $primecolor;
-            right: 10px;
-            top: 22px;
-            width: 53px;
-            text-align: center;
-            padding: 4px 8px;
-            border-radius: 12px;
-            color: $textcolor1;
-            font-size: 14px;
-          }
-          .free {
-            background-color: #FFD740;
-          }
+        p {
+          font-size: 17px;
+          color: #595959;
         }
-        .foot {
-          padding-left: 14px;
-          margin-top: 20px;
-          span {
-            color: #B9B9B9;
-            margin-right: 8px;
-            i {
+      }
+      .specialities {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        .card {
+          background-color: $backgroundcolor1;
+          width: 340px;
+          height: 460px;
+          margin: 20px;
+          border: 1px solid #f2f2f2;
+          img {
+            width: 100%;
+          }
+          .info {
+            padding: 14px;
+            position: relative;
+            h4 {
+              font-family: $titlefont;
+              font-size: 15px;
+              margin: 14px 0 10px;
+            }
+            h6 {
+              font-size: 14px;
+              color: #B9B9B9;
+              margin-bottom: 14px;
+            }
+            p {
+              font-size: 15px;
+              color: grey;
+              line-height: 26px;
+            }
+            .cost {
+              position: absolute;
+              background-color: $primecolor;
+              right: 10px;
+              top: 22px;
+              width: 53px;
+              text-align: center;
+              padding: 4px 8px;
+              border-radius: 12px;
+              color: $textcolor1;
+              font-size: 14px;
+            }
+            .free {
+              background-color: #FFD740;
+            }
+          }
+          .foot {
+            padding-left: 14px;
+            margin-top: 20px;
+            span {
               color: #B9B9B9;
               margin-right: 8px;
+              i {
+                color: #B9B9B9;
+                margin-right: 8px;
+              }
             }
           }
         }
       }
-    }
-    .navIcons {
-      text-align: center;
-      margin: 30px 0 30px;
-      i {
-        color: #9CE0FF;
+      .navIcons {
+        text-align: center;
+        margin: 30px 0 30px;
+        i {
+          color: #9CE0FF;
+        }
+        .active {
+          color: $primecolor;
+        }
       }
-      .active {
-        color: $primecolor;
+    }
+    .five-bottom {
+      padding: $standardPadding;
+      border-bottom: 1px solid lightgrey;
+      .pricing {
+        padding-top: 30px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        h2 {
+          font-size: 45px;
+        }
+        p {
+          font-size: 17px;
+          color: #595959;
+        }
+      }
+      .table {
+        width: 90%;
+        margin: 70px auto;
+        margin-bottom: 50px;
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .line {
+          float: left;
+          border: 1px solid #f2f2f2;
+          width: 25%;
+          background-color: $backgroundcolor1;
+          text-align: center;
+          li {
+            border-bottom : 1px solid #f2f2f2;
+            height: 62px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #808080;
+            .btn {
+              background-color: $backgroundcolor1;
+              border: 2px solid grey;
+              color: #808080;
+              font-weight: 700;
+              &:hover {
+                background-color: $primecolor;
+                color: $textcolor1;
+              }
+            }
+          }
+        }
+        .line li:first-child {
+          flex-direction: column;
+          justify-content: space-around;
+          height: 180px;
+          border-top: 6px solid #F2F8FC;
+          background-color: #F7FDFF;
+          &:hover {
+            border-top: 6px solid $primecolor;
+            cursor: pointer;
+          }
+        }
+        .line li:last-child {
+          border-bottom: none;
+          background-color: #F7FDFF;
+          height: 96px;
+        }
+        .aside li:first-child {
+          background-color: $backgroundcolor1;
+          height: 200px;
+          justify-content: flex-end;
+          h3 {
+            font-family: $titlefont;
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #000000;
+          }
+        }
+        .aside li:last-child {
+          background-color: $backgroundcolor1;
+          height: 62px;
+        }
+      }
+    }
+  }
+  .six {
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      width: 85%;
+      li {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 95%;
+        }
       }
     }
   }

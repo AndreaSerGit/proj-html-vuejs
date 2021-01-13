@@ -73,6 +73,14 @@ i:hover {
   color: #40C4FF;
 }
 
+.fa-check {
+  color: #40C4FF;
+}
+
+.fa-times {
+  color: #898989;
+}
+
 header {
   background-size: cover;
   -webkit-background-size: cover;
@@ -352,61 +360,64 @@ main .four .learning img {
   width: 120px;
 }
 main .five {
-  padding: 30px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-image: url("../img/page-background-img.png");
 }
-main .five .popular {
+main .five .five-top {
+  padding: 30px;
+  border-bottom: 1px solid lightgrey;
+}
+main .five .five-top .popular {
   padding-top: 30px;
   width: 70%;
   margin: auto;
   text-align: center;
 }
-main .five .popular h2 {
+main .five .five-top .popular h2 {
   font-size: 45px;
 }
-main .five .popular p {
+main .five .five-top .popular p {
   font-size: 17px;
   color: #595959;
 }
-main .five .specialities {
+main .five .five-top .specialities {
   padding-top: 100px;
   display: flex;
   justify-content: space-around;
 }
-main .five .specialities .card {
+main .five .five-top .specialities .card {
   background-color: #FFFFFF;
   width: 340px;
   height: 460px;
   margin: 20px;
   border: 1px solid #f2f2f2;
 }
-main .five .specialities .card img {
+main .five .five-top .specialities .card img {
   width: 100%;
 }
-main .five .specialities .card .info {
+main .five .five-top .specialities .card .info {
   padding: 14px;
   position: relative;
 }
-main .five .specialities .card .info h4 {
+main .five .five-top .specialities .card .info h4 {
   font-family: "Merriweather", serif;
   font-size: 15px;
   margin: 14px 0 10px;
 }
-main .five .specialities .card .info h6 {
+main .five .five-top .specialities .card .info h6 {
   font-size: 14px;
   color: #B9B9B9;
   margin-bottom: 14px;
 }
-main .five .specialities .card .info p {
+main .five .five-top .specialities .card .info p {
   font-size: 15px;
   color: grey;
   line-height: 26px;
 }
-main .five .specialities .card .info .cost {
+main .five .five-top .specialities .card .info .cost {
   position: absolute;
   background-color: #40C4FF;
   right: 10px;
@@ -418,28 +429,130 @@ main .five .specialities .card .info .cost {
   color: #FFFFFF;
   font-size: 14px;
 }
-main .five .specialities .card .info .free {
+main .five .five-top .specialities .card .info .free {
   background-color: #FFD740;
 }
-main .five .specialities .card .foot {
+main .five .five-top .specialities .card .foot {
   padding-left: 14px;
   margin-top: 20px;
 }
-main .five .specialities .card .foot span {
+main .five .five-top .specialities .card .foot span {
   color: #B9B9B9;
   margin-right: 8px;
 }
-main .five .specialities .card .foot span i {
+main .five .five-top .specialities .card .foot span i {
   color: #B9B9B9;
   margin-right: 8px;
 }
-main .five .navIcons {
+main .five .five-top .navIcons {
   text-align: center;
   margin: 30px 0 30px;
 }
-main .five .navIcons i {
+main .five .five-top .navIcons i {
   color: #9CE0FF;
 }
-main .five .navIcons .active {
+main .five .five-top .navIcons .active {
   color: #40C4FF;
+}
+main .five .five-bottom {
+  padding: 30px;
+  border-bottom: 1px solid lightgrey;
+}
+main .five .five-bottom .pricing {
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+main .five .five-bottom .pricing h2 {
+  font-size: 45px;
+}
+main .five .five-bottom .pricing p {
+  font-size: 17px;
+  color: #595959;
+}
+main .five .five-bottom .table {
+  width: 90%;
+  margin: 70px auto;
+  margin-bottom: 50px;
+}
+main .five .five-bottom .table::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main .five .five-bottom .table .line {
+  float: left;
+  border: 1px solid #f2f2f2;
+  width: 25%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+main .five .five-bottom .table .line li {
+  border-bottom: 1px solid #f2f2f2;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+}
+main .five .five-bottom .table .line li .btn {
+  background-color: #FFFFFF;
+  border: 2px solid grey;
+  color: #808080;
+  font-weight: 700;
+}
+main .five .five-bottom .table .line li .btn:hover {
+  background-color: #40C4FF;
+  color: #FFFFFF;
+}
+main .five .five-bottom .table .line li:first-child {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 180px;
+  border-top: 6px solid #F2F8FC;
+  background-color: #F7FDFF;
+}
+main .five .five-bottom .table .line li:first-child:hover {
+  border-top: 6px solid #40C4FF;
+  cursor: pointer;
+}
+main .five .five-bottom .table .line li:last-child {
+  border-bottom: none;
+  background-color: #F7FDFF;
+  height: 96px;
+}
+main .five .five-bottom .table .aside li:first-child {
+  background-color: #FFFFFF;
+  height: 200px;
+  justify-content: flex-end;
+}
+main .five .five-bottom .table .aside li:first-child h3 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #000000;
+}
+main .five .five-bottom .table .aside li:last-child {
+  background-color: #FFFFFF;
+  height: 62px;
+}
+main .six {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .six ul {
+  display: flex;
+  width: 85%;
+}
+main .six ul li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .six ul li img {
+  width: 95%;
 }
