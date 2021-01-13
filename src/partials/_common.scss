@@ -57,6 +57,45 @@ a {
   }
 }
 
+.red {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  bottom: 45%;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 70%;
+  }
+}
+
+.sale {
+  height: 50px;
+  width: 50px;
+  background-color: $backgroundcolor1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  bottom: 55%;
+  box-shadow: 1px 1px 1px 2px #CECECE;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 60%;
+  }
+}
+
 
 i {
   color: #FFFFFF80;
