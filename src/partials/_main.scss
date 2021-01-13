@@ -128,7 +128,7 @@ main {
   }
   .four {
     width: $widthauto;
-    padding: $standardPadding;
+    padding: 120px 100px 30px 30px;
     height: 680px;
     display: flex;
     .list {
@@ -143,16 +143,46 @@ main {
         border-bottom: none;
         display: flex;
         align-items: center;
+        a {
+          color: #808080;
+        }
         &:last-child {
           border-bottom: 1px solid gray;
         }
       }
       .selected {
         border-left: 7px solid $primecolor;
+        a {
+          color: $primecolor;
+        }
       }
     }
     .learning {
       width: 65%;
+      position: relative;
+      p {
+        line-height: 26px;
+        font-size: 17px;
+        color: #808080;
+        margin-bottom: 59px;
+      }
+      ul {
+        line-height: 48px;
+        li {
+          font-size: 17px;
+          color: #808080;
+          i {
+            margin-right: 20px;
+            color: $primecolor;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        right: -32px;
+        bottom: 78px;
+        width: 120px;
+      }
     }
   }
 }

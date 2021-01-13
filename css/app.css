@@ -69,6 +69,9 @@ i:hover {
 .selected {
   border-left: 7px solid #40C4FF;
 }
+.selected a {
+  color: #40C4FF;
+}
 
 header {
   background-size: cover;
@@ -290,7 +293,7 @@ main .three .student h5 {
 }
 main .four {
   width: 100%;
-  padding: 30px;
+  padding: 120px 100px 30px 30px;
   height: 680px;
   display: flex;
 }
@@ -308,12 +311,42 @@ main .four .list li {
   display: flex;
   align-items: center;
 }
+main .four .list li a {
+  color: #808080;
+}
 main .four .list li:last-child {
   border-bottom: 1px solid gray;
 }
 main .four .list .selected {
   border-left: 7px solid #40C4FF;
 }
+main .four .list .selected a {
+  color: #40C4FF;
+}
 main .four .learning {
   width: 65%;
+  position: relative;
+}
+main .four .learning p {
+  line-height: 26px;
+  font-size: 17px;
+  color: #808080;
+  margin-bottom: 59px;
+}
+main .four .learning ul {
+  line-height: 48px;
+}
+main .four .learning ul li {
+  font-size: 17px;
+  color: #808080;
+}
+main .four .learning ul li i {
+  margin-right: 20px;
+  color: #40C4FF;
+}
+main .four .learning img {
+  position: absolute;
+  right: -32px;
+  bottom: 78px;
+  width: 120px;
 }
