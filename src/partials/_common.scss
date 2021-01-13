@@ -8,6 +8,7 @@
   height: 100vh;
   width: 100%;
   font-family: sans-serif;
+  position: absolute;
 }
 
 h1 {
@@ -35,25 +36,26 @@ a {
 }
 
 
-  .top {
-    height: 58px;
-    width: 58px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $primecolor;
-    position: fixed;
-    right: 0;
-    z-index: 99;
-    a {
-      color: $textcolor1;
-      text-align: center;
-      p {
-        margin-bottom: 0;
-      }
+.top {
+  height: 58px;
+  width: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primecolor;
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+  z-index: 999;
+  a {
+    color: $textcolor1;
+    text-align: center;
+    p {
+      margin-bottom: 0;
     }
   }
+}
 
 
 i {
