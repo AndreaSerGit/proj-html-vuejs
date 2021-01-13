@@ -296,6 +296,7 @@ main .four {
   padding: 120px 100px 30px 30px;
   height: 680px;
   display: flex;
+  border-bottom: 1px solid lightgrey;
 }
 main .four .list {
   width: 35%;
@@ -349,4 +350,96 @@ main .four .learning img {
   right: -32px;
   bottom: 78px;
   width: 120px;
+}
+main .five {
+  padding: 30px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("../img/page-background-img.png");
+}
+main .five .popular {
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+main .five .popular h2 {
+  font-size: 45px;
+}
+main .five .popular p {
+  font-size: 17px;
+  color: #595959;
+}
+main .five .specialities {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+main .five .specialities .card {
+  background-color: #FFFFFF;
+  width: 340px;
+  height: 460px;
+  margin: 20px;
+  border: 1px solid #f2f2f2;
+}
+main .five .specialities .card img {
+  width: 100%;
+}
+main .five .specialities .card .info {
+  padding: 14px;
+  position: relative;
+}
+main .five .specialities .card .info h4 {
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  margin: 14px 0 10px;
+}
+main .five .specialities .card .info h6 {
+  font-size: 14px;
+  color: #B9B9B9;
+  margin-bottom: 14px;
+}
+main .five .specialities .card .info p {
+  font-size: 15px;
+  color: grey;
+  line-height: 26px;
+}
+main .five .specialities .card .info .cost {
+  position: absolute;
+  background-color: #40C4FF;
+  right: 10px;
+  top: 22px;
+  width: 53px;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+main .five .specialities .card .info .free {
+  background-color: #FFD740;
+}
+main .five .specialities .card .foot {
+  padding-left: 14px;
+  margin-top: 20px;
+}
+main .five .specialities .card .foot span {
+  color: #B9B9B9;
+  margin-right: 8px;
+}
+main .five .specialities .card .foot span i {
+  color: #B9B9B9;
+  margin-right: 8px;
+}
+main .five .navIcons {
+  text-align: center;
+  margin: 30px 0 30px;
+}
+main .five .navIcons i {
+  color: #9CE0FF;
+}
+main .five .navIcons .active {
+  color: #40C4FF;
 }
