@@ -16,6 +16,11 @@ main {
         background-color: #F2F8FC;
         img {
           margin-bottom: 20px;
+          transition: 0.3;
+          &:hover {
+            transform: scale(1.2);
+            transition: 0.3;
+          }
         }
         a {
           width: 100%;
@@ -285,9 +290,7 @@ main {
         margin: 70px auto;
         margin-bottom: 50px;
         &::after {
-          content: "";
-          display: table;
-          clear: both;
+          @include clearfix;
         }
         .line {
           float: left;
@@ -363,6 +366,10 @@ main {
         align-items: center;
         img {
           width: 95%;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+          }
         }
       }
     }

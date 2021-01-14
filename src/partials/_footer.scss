@@ -48,6 +48,9 @@ footer {
               color: #CECECE;
               font-size: 16px;
               line-height: 12px;
+              &:hover {
+                color: $primecolor;
+              }
             }
           }
           p {
