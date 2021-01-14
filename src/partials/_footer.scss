@@ -39,10 +39,7 @@ footer {
       a {
         line-height: 40px;
       }
-      ul {
-        li {
-          h4 {
-            a {
+      ul li h4 a {
               font-family: $titlefont;
               color: #CECECE;
               font-size: 16px;
@@ -50,15 +47,11 @@ footer {
               &:hover {
                 color: $primecolor;
               }
-            }
-          }
-          p {
-            a {
+
+          p a {
               font-size: 14px;
               color: #B9B9B9;
             }
-          }
-        }
       }
       img {
         width: 300px;
@@ -96,13 +89,11 @@ footer {
       ul {
         width: 80px;
         @include flexJSpace;
-        li {
-          a {
-            i:hover {
-              color: $primecolor;
-            }
+        li a {
+          i:hover {
+            color: $primecolor;
           }
-        }
+        }  
       }
     }
   }

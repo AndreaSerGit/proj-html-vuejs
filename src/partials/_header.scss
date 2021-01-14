@@ -37,14 +37,11 @@ header {
         }
       }
       .icons {
-        a {
-          color: $textcolor1;
-          i {
+        a  i {
             margin: 10px;
             font-size: 20px;
+            color: $textcolor1
           }
-        }
-
       }
     }
     .jumbo {
