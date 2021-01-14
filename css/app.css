@@ -317,21 +317,31 @@ main .three {
   flex-direction: column;
   text-align: center;
 }
-main .three p {
+main .three .slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+main .three .slide p {
   font-size: 18px;
   line-height: 30px;
   color: #FFFFFF;
 }
-main .three .student {
+main .three .slide .student {
   color: #FFFFFF;
 }
-main .three .student h3 {
+main .three .slide .student h3 {
   font-family: "Merriweather", serif;
   font-size: 22px;
   margin-bottom: 20px;
 }
-main .three .student h5 {
+main .three .slide .student h5 {
   font-size: 14px;
+}
+main .three .circle i {
+  margin: 5px;
 }
 main .four {
   width: 100%;

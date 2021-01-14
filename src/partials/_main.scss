@@ -101,22 +101,33 @@ main {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    p {
-      font-size: 18px;
-      line-height: 30px;
-      color: $textcolor1;
-    }
-    .student {
-      color: $textcolor1;
-      h3 {
-        font-family: $titlefont;
-        font-size: 22px;
-        margin-bottom: 20px;
+    .slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 300px;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        color: $textcolor1;
       }
-      h5 {
-        font-size: 14px;
+      .student {
+        color: $textcolor1;
+        h3 {
+          font-family: $titlefont;
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+        h5 {
+          font-size: 14px;
+        }
       }
     }
+    .circle i {
+      margin: 5px;
+    }
+
   }
   .four {
     width: $widthauto;

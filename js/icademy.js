@@ -133,14 +133,37 @@ var app = new Vue(
         {
           image: 'img/h5-client-1.png'
         },
-      ]
+      ],
+      peoples: [
+        {
+          image: 'img/testimonials-standard-2.png',
+          name: 'Joan Collins',
+          state: 'STUDENT',
+          text: '"Mroin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet marius. Morbi accumsan ispum velit. Nam nec tellus."'
+        },
+        {
+          image: 'img/testimonials-standard-6.png',
+          name: 'Molly Simon',
+          state: 'TEACHER',
+          text: '"Mroin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet marius. Morbi accumsan ispum velit. Nam nec tellus."'
+        },
+        {
+          image: 'img/testimonials-standard-1.png',
+          name: 'Virginia Foster',
+          state: 'STUDENT',
+          text: '"Mroin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet marius. Morbi accumsan ispum velit. Nam nec tellus."'
+        }
 
-
+      ],
+      peopleIndex: 0,
     },
     created: function() {
 
     },
     methods: {
+        goToImage: function(newIndex) {
+          this.peopleIndex = newIndex
+        }
 
       }
    ,
