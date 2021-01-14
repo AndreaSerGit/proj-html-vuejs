@@ -79,29 +79,9 @@
         <section class="one">
           <div class="choice">
             <ul>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-1.png" alt="">
-                <h3>Languages</h3>
-              </a></li>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-2.png" alt="">
-                <h3>Software</h3>
-              </a></li>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-3.png" alt="">
-                <h3>Business</h3>
-              </a></li>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-4.png" alt="">
-                <h3>Chemistry</h3>
-              </a></li>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-5.png" alt="">
-                <h3>Science</h3>
-              </a></li>
-              <li><a href="#">
-                <img src="img/h5-custom-icon-6.png" alt="">
-                <h3>DIY&Craft</h3>
+              <li v-for='box in imageBox'><a href="#">
+                <img :src="box.image" alt="">
+                <h3>{{box.name}}</h3>
               </a></li>
             </ul>
 
@@ -191,51 +171,22 @@
             </div>
 
             <div class="specialities">
-              <div class="card">
-                <img src="img\course-5-f-img.jpg" alt="">
+              <div v-for='card in cards' class="card">
+                <img :src="card.image" alt="">
                 <div class="info">
-                  <h4>Android Developer</h4>
-                  <h6>David Sanders</h6>
-                  <p>Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.</p>
-                  <div class="cost free">
-                    FREE
+                  <h4>{{card.course}}</h4>
+                  <h6>{{card.name}}</h6>
+                  <p>{{card.text}}</p>
+                  <div class="cost" :class="card.cost == 'FREE' ? 'free' : ''">
+                    {{card.cost}}
                   </div>
                 </div>
                 <div class="foot">
-                  <span><i class="fas fa-user"></i>1</span> <span><i class="fas fa-bookmark"></i>PROGRAMMING</span>
+                  <span><i class="fas fa-user"></i>{{card.avatar}}</span> <span><i class="fas fa-bookmark"></i>{{card.sign}}</span>
                 </div>
 
               </div>
 
-              <div class="card">
-                <img src="img\course-6-f-img.jpg" alt="">
-                <div class="info">
-                  <h4>Web Designing</h4>
-                  <h6>Jennifer Powell</h6>
-                  <p>Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.</p>
-                  <div class="cost free">
-                    FREE
-                  </div>
-                </div>
-                <div class="foot">
-                  <span><i class="fas fa-user"></i>1</span> <span><i class="fas fa-bookmark"></i>PROGRAMMING</span>
-                </div>
-              </div>
-
-              <div class="card">
-                <img src="img\course-7-f-img.jpg" alt="">
-                <div class="info">
-                  <h4>Financial Modeling</h4>
-                  <h6>Edward Bowman</h6>
-                  <p>Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.</p>
-                  <div class="cost">
-                    $20
-                  </div>
-                </div>
-                <div class="foot">
-                  <span><i class="fas fa-user"></i>1</span> <span><i class="fas fa-bookmark"></i>BUSINESS</span>
-                </div>
-              </div>
             </div>
 
             <div class="navIcons">
@@ -362,17 +313,8 @@
 
         <section class="six">
           <ul>
-            <li>
-              <img src="img\h5-client-5.png" alt="">
-            </li>
-            <li>
-              <img src="img\h5-client-1.png" alt="">
-            </li>
-            <li>
-              <img src="img\h5-client-2.png" alt="">
-            </li>
-            <li>
-              <img src="img\h5-client-1.png" alt="">
+            <li v-for='mark in marks'>
+              <img :src="mark.image" alt="">
             </li>
           </ul>
         </section>

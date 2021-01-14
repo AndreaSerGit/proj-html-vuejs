@@ -64,7 +64,77 @@ var app = new Vue(
           corso: 'Learn Spanish',
           name: 'Jennie King'
         },
+      ],
+      imageBox: [
+        {
+          image: 'img/h5-custom-icon-1.png',
+          name: 'Languages'
+        },
+        {
+          image: 'img/h5-custom-icon-2.png',
+          name: 'Software'
+        },
+        {
+          image: 'img/h5-custom-icon-3.png',
+          name: 'Business'
+        },
+        {
+          image: 'img/h5-custom-icon-4.png',
+          name: 'Chemistry'
+        },
+        {
+          image: 'img/h5-custom-icon-5.png',
+          name: 'Science'
+        },
+        {
+          image: 'img/h5-custom-icon-6.png',
+          name: 'DIY&Craft'
+        },
+      ],
+      cards: [
+        {
+          image:  'img/course-5-f-img.jpg',
+          name: 'David Sanders',
+          course: 'Android Developer',
+          text: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
+          cost: 'FREE',
+          avatar: '1',
+          sign: 'PROGRAMMING'
+        },
+        {
+          image:  'img/course-6-f-img.jpg',
+          name: 'Jennifer Powell',
+          course: 'Web Designing',
+          text: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
+          cost: 'FREE',
+          avatar: '1',
+          sign: 'PROGRAMMING'
+        },
+        {
+          image:  'img/course-7-f-img.jpg',
+          name: 'Edward Bowman',
+          course: 'Financial Modeling',
+          text: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
+          cost: '$20',
+          avatar: '1',
+          sign: 'BUSINESS'
+        }
+      ],
+      marks: [
+        {
+          image: 'img/h5-client-5.png'
+        },
+        {
+          image: 'img/h5-client-1.png'
+        },
+        {
+          image: 'img/h5-client-2.png'
+        },
+        {
+          image: 'img/h5-client-1.png'
+        },
       ]
+
 
     },
     created: function() {
