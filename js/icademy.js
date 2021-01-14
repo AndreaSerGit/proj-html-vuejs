@@ -155,6 +155,39 @@ var app = new Vue(
         }
 
       ],
+      listResult: [
+        {
+          name: 'What We Do',
+          title: 'Learning Possibilities',
+          image: 'img/h12-tabs-icon-1.png'
+        },
+        {
+          name: 'Degree Programme',
+          title: 'Inspiring Minds',
+          image: 'img/h12-tabs-icon-2.png'
+        },
+        {
+          name: 'Career Achievements',
+          title: 'Investing in Knowledge',
+          image: 'img/h12-tabs-icon-3.png'
+        },
+        {
+          name: 'Personal Management',
+          title: 'Secure Your Future',
+          image: 'img/h12-tabs-icon-4.png'
+        },
+        {
+          name: 'Steps to Success',
+          title: 'Where Learning Begins',
+          image: 'img/h12-tabs-icon-5.png'
+        },
+        {
+          name: 'Knowledge Transfer',
+          title: 'Knowledge is Power',
+          image: 'img/h12-tabs-icon-6.png'
+        },
+      ],
+      listIndex: 0,
       peopleIndex: 0,
     },
     created: function() {
@@ -163,7 +196,11 @@ var app = new Vue(
     methods: {
         goToImage: function(newIndex) {
           this.peopleIndex = newIndex
-        }
+        },
+        goToSection: function(newIndex) {
+          this.listIndex = newIndex
+        },
+
 
       }
    ,

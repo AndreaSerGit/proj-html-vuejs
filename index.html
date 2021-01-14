@@ -137,17 +137,12 @@
         <section class="four">
           <div class="list">
             <ul>
-              <li class="selected"><a href="">What We Do</a></li>
-              <li><a href="">Degree Programme</a></li>
-              <li><a href="">Career Achievements</a></li>
-              <li><a href="">Personal Managment</a></li>
-              <li><a href="">Steps To Success</a></li>
-              <li><a href="">Knowledge Transfer</a></li>
+              <li v-for='(result, index) in listResult' :class="(index == listIndex) ? 'selected' : ''" @click='goToSection(index)'><a href="#a">{{result.name}}</a></li>
             </ul>
           </div>
 
           <div class="learning">
-            <h2>Learning Possibilities</h2>
+            <h2>{{listResult[listIndex].title}}</h2>
             <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt</p>
 
             <ul>
@@ -157,7 +152,7 @@
               <li><i class="fas fa-check"></i>People teach. People learn. This is where they connect.</li>
             </ul>
 
-            <img src="img\h12-tabs-icon-1.png" alt="">
+            <img :src="listResult[listIndex].image" alt="">
 
 
           </div>

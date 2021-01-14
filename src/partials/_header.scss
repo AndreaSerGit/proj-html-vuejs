@@ -65,11 +65,14 @@ header {
           margin: 20px;
           line-height: 30px;
         }
+        .btn:hover {
+          background-color: #55ACEE;
+        }
       }
       .navIcons {
         margin: 10px;
         i {
-          color : #0707071A;
+          color : #C1B7B9;
           margin: 5px;
           font-size: 15px;
         }
