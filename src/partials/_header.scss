@@ -2,7 +2,7 @@ header {
   @include backgroundSize;
   background-image: url('../img/course-9-f-img.jpg');
   width: 100%;
-  height: 675px;
+  height: 100vh;
   color: $textcolor1;
   position: relative;
   .layover {

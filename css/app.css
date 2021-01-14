@@ -136,7 +136,7 @@ header {
   -o-background-size: cover;
   background-image: url("../img/course-9-f-img.jpg");
   width: 100%;
-  height: 675px;
+  height: 100vh;
   color: #FFFFFF;
   position: relative;
 }
@@ -506,6 +506,9 @@ main .five .five-top .specialities .card .foot {
 main .five .five-top .specialities .card .foot span {
   color: #B9B9B9;
   margin-right: 8px;
+}
+main .five .five-top .specialities .card .foot span:hover {
+  color: black;
 }
 main .five .five-top .specialities .card .foot span i {
   color: #B9B9B9;

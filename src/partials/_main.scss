@@ -273,6 +273,9 @@ main {
             span {
               color: #B9B9B9;
               margin-right: 8px;
+              &:hover {
+                color: black;
+              }
               i {
                 color: #B9B9B9;
                 margin-right: 8px;
