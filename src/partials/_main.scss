@@ -150,7 +150,7 @@ main {
           }
         }
         a {
-          color: #808080;
+          color: $textColorGrey;
         }
         &:last-child {
           border-bottom: 1px solid gray;
@@ -169,14 +169,14 @@ main {
       p {
         line-height: 26px;
         font-size: 17px;
-        color: #808080;
+        color: $textColorGrey;
         margin-bottom: 59px;
       }
       ul {
         line-height: 48px;
         li {
           font-size: 17px;
-          color: #808080;
+          color: $textColorGrey;
           i {
             margin-right: 20px;
             color: $primecolor;
@@ -225,7 +225,7 @@ main {
             margin-top: 10px;
             transition: 0.5s;
             cursor: pointer;
-            box-shadow: 0 4px 2px -2px lightgray; 
+            box-shadow: 0 4px 2px -2px lightgray;
           }
           img {
             width: 100%;
@@ -237,6 +237,9 @@ main {
               font-family: $titlefont;
               font-size: 15px;
               margin: 14px 0 10px;
+              &:hover {
+                color: $primecolor;
+              }
             }
             h6 {
               font-size: 14px;
@@ -323,11 +326,11 @@ main {
             height: 62px;
             @include flexAcenter;
             justify-content: center;
-            color: #808080;
+            color: $textColorGrey;
             .btn {
               background-color: $backgroundcolor1;
               border: 2px solid grey;
-              color: #808080;
+              color: $textColorGrey;
               font-weight: 700;
               &:hover {
                 background-color: $primecolor;

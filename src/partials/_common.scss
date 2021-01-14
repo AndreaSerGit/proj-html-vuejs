@@ -51,8 +51,14 @@ a {
   a {
     color: $textcolor1;
     text-align: center;
+    i {
+      color: $textcolor1;
+    }
     p {
       margin-bottom: 0;
+      &:hover {
+        display: none;
+      }
     }
   }
 }
