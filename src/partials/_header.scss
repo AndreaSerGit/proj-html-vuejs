@@ -15,8 +15,7 @@ header {
     nav {
       height: 100px;
       width: $widthauto;
-      display: flex;
-      align-items: center;
+      @include flexAcenter;
       justify-content: space-around;
       .logo{
         width: 25%;
@@ -27,8 +26,7 @@ header {
       .links {
         width: 50%;
         ul {
-          display: flex;
-          justify-content: space-between;
+          @include flexJSpace;
           li {
             display: inline-block;
             font-size: 14px;
@@ -50,15 +48,13 @@ header {
       }
     }
     .jumbo {
-      display: flex;
-      flex-direction: column;
+      @include flexColumn ;
       height: calc(100% - 100px);
       text-align: center;
       .mainBox {
         width: 75%;
         margin: auto;
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         align-items: center;
         justify-content: center;
         h1 {

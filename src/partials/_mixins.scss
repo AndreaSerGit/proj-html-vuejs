@@ -11,3 +11,17 @@
   display: table;
   clear: both;
 }
+
+@mixin flexAcenter {
+  display: flex;
+  align-items: center;
+}
+@mixin flexJSpace {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}

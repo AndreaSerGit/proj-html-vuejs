@@ -312,9 +312,9 @@ main .three {
   height: 640px;
   padding: 120px 200px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   text-align: center;
 }
 main .three .slide {
@@ -536,8 +536,8 @@ main .five .five-bottom .table .line li {
   border-bottom: 1px solid #f2f2f2;
   height: 62px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: #808080;
 }
 main .five .five-bottom .table .line li .btn {
@@ -551,6 +551,7 @@ main .five .five-bottom .table .line li .btn:hover {
   color: #FFFFFF;
 }
 main .five .five-bottom .table .line li:first-child {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 180px;
@@ -584,8 +585,8 @@ main .five .five-bottom .table .aside li:last-child {
 main .six {
   height: 230px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 main .six ul {
   display: flex;
@@ -680,11 +681,11 @@ footer .footer-top div .contacts a i {
 }
 footer .footer-bottom {
   display: flex;
+  justify-content: space-between;
   width: 90%;
   margin: auto;
   height: 80px;
   color: #959595;
-  justify-content: space-between;
   align-items: center;
 }
 footer .footer-bottom .social {
