@@ -395,37 +395,23 @@
             </div>
 
           </div>
+
           <div>
             <h3>Popular Courses</h3>
             <ul>
-              <li>
+              <li v-for='corsi in listaPersonale'>
                 <h4>
-                  <a href="#">Business English</a>
+                  <a href="#">{{corsi.corso}}</a>
                 </h4>
-                <p><a href="#">Preston Marshall</a></p>
-              </li>
-              <li>
-                <h4>
-                  <a href="#">Social Computing</a>
-                </h4>
-                <p><a href="#">David Sanders</a></p>
-              </li>
-              <li>
-                <h4>
-                  <a href="#">Learn Spanish</a>
-                </h4>
-                <p><a href="#">Jennie King</a></p>
+                <p><a href="#">{{corsi.name}}</a></p>
               </li>
             </ul>
           </div>
+
           <div>
             <h3>Support</h3>
             <ul>
-              <li><a href="">User dashboard</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">Course Offer</a></li>
-              <li><a href="">Events</a></li>
+              <li v-for="link in listaLinkSupport"><a href="link.link">{{link.name}}</a></li>
             </ul>
           </div>
           <div>
@@ -443,9 +429,9 @@
             <span>CALL +44 300 303 0266</span>
             <span>FOLLOW US</span>
             <ul>
-              <li><a href=""><i class="fab fa-twitter"></i></a></li>
-              <li><a href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/MikadoThemes?lang=en&_ga=2.220505816.1308967069.1610451545-447678428.1610451545"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/mikadothemes/?_ga=2.141396978.1308967069.1610451545-447678428.1610451545"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/Mikado-Themes-884182241781117?_ga=2.141396978.1308967069.1610451545-447678428.1610451545"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
           </div>
 
