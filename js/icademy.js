@@ -225,8 +225,13 @@ var app = new Vue(
         }, 500)
         app.classFade = false;
 
+      },
+     scrollToTop: function() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        })
       }
-
 
       }
    ,
