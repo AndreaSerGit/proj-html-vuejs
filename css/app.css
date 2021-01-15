@@ -182,10 +182,39 @@ header .layover nav .links ul li {
 header .layover nav .links ul li a {
   color: #FFFFFF;
 }
+header .layover nav .icons {
+  position: relative;
+}
 header .layover nav .icons a i {
   margin: 10px;
   font-size: 20px;
   color: #FFFFFF;
+}
+
+header .layover nav .icons .search {
+  width: 300px;
+  height: 50px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  border-top: 5px solid #40C4FF;
+  opacity: 0;
+}
+header .layover nav .icons .appear {
+  opacity: 1;
+}
+header .layover nav .icons .search a i {
+  color: #CECECE;
+}
+header .layover nav .icons .search input {
+  width: 230px;
+  margin-left: 20px;
+  outline: none;
+  border: none;
 }
 header .layover .jumbo {
   display: flex;

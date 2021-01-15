@@ -37,10 +37,36 @@ header {
         }
       }
       .icons {
+        position: relative;
         a  i {
             margin: 10px;
             font-size: 20px;
             color: $textcolor1
+          }
+          .appear {
+            opacity: 1;
+          }
+          .search {
+            width: 300px;
+            height: 50px;
+            background-color: $backgroundcolor1;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top: 60px;
+            right: 80px;
+            border-top: 5px solid $primecolor;
+            opacity: 0;
+            a  i {
+              color: $textColorLightGrey;
+            }
+            input {
+              width: 230px;
+              margin-left: 20px;
+              outline: none;
+              border: none;
+            }
           }
       }
     }

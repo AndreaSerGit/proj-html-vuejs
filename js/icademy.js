@@ -191,6 +191,7 @@ var app = new Vue(
       peopleIndex: 0,
       classFade: false,
       autoPlay: '',
+      toAppear: '',
     },
     created: function() {
       this.autoPlay = setInterval(
@@ -232,6 +233,14 @@ var app = new Vue(
           behavior: "smooth"
         })
       },
+      clickToAppear: function() {
+
+        if (this.toAppear == 'appear') {
+          this.toAppear = ''
+        } else {
+          this.toAppear = 'appear'
+        }
+      }
 
     }
    ,
