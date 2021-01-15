@@ -190,13 +190,20 @@ var app = new Vue(
       listIndex: 0,
       peopleIndex: 0,
       classFade: false,
+      autoPlay: '',
     },
     created: function() {
+      this.autoPlay = setInterval(
+        () => {
+          this.nextImage();
+        }, 6000
+      )
 
     },
     methods: {
         goToImage: function(newIndex) {
 
+          clearInterval(this.autoPlay)
           setTimeout(function() {
             app.classFade = 'fade-in';
             app.peopleIndex = newIndex;
@@ -207,6 +214,18 @@ var app = new Vue(
 
             this.listIndex = newIndex;
         },
+        nextImage: function() {
+
+        setTimeout(function() {
+          app.classFade = 'fade-in';
+          app.peopleIndex++;
+          if(app.peopleIndex == app.peoples.length) {
+            app.peopleIndex = 0;
+          }
+        }, 500)
+        app.classFade = false;
+
+      }
 
 
       }
