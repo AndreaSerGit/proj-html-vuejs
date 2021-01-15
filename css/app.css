@@ -190,7 +190,6 @@ header .layover nav .icons a i {
   font-size: 20px;
   color: #FFFFFF;
 }
-
 header .layover nav .icons .search {
   width: 300px;
   height: 50px;
@@ -204,9 +203,6 @@ header .layover nav .icons .search {
   border-top: 5px solid #40C4FF;
   opacity: 0;
 }
-header .layover nav .icons .appear {
-  opacity: 1;
-}
 header .layover nav .icons .search a i {
   color: #CECECE;
 }
@@ -215,6 +211,9 @@ header .layover nav .icons .search input {
   margin-left: 20px;
   outline: none;
   border: none;
+}
+header .layover nav .icons .appear {
+  opacity: 1;
 }
 header .layover .jumbo {
   display: flex;
