@@ -54,6 +54,7 @@ header {
         @include flexColumn;
         align-items: center;
         justify-content: center;
+        @include animationFade;
         h1 {
           margin : 20px;
         }

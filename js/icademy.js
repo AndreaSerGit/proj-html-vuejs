@@ -189,16 +189,23 @@ var app = new Vue(
       ],
       listIndex: 0,
       peopleIndex: 0,
+      classFade: false,
     },
     created: function() {
 
     },
     methods: {
         goToImage: function(newIndex) {
-          this.peopleIndex = newIndex
+
+          setTimeout(function() {
+            app.classFade = 'fade-in';
+            app.peopleIndex = newIndex;
+          }, 500)
+          app.classFade = false;
         },
         goToSection: function(newIndex) {
-          this.listIndex = newIndex
+
+            this.listIndex = newIndex;
         },
 
 

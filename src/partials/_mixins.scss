@@ -25,3 +25,8 @@
   display: flex;
   flex-direction: column;
 }
+
+@mixin animationFade {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}

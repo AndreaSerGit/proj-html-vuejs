@@ -129,6 +129,13 @@ i:hover {
   color: #898989;
 }
 
+.fade-in {
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 header {
   background-size: cover;
   -webkit-background-size: cover;
@@ -193,6 +200,10 @@ header .layover .jumbo .mainBox {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 header .layover .jumbo .mainBox h1 {
   margin: 20px;
