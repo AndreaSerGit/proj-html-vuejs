@@ -457,7 +457,7 @@ main .five .five-top .specialities {
 }
 main .five .five-top .specialities .card {
   background-color: #FFFFFF;
-  width: 340px;
+  min-width: 340px;
   height: 460px;
   margin: 20px;
   border: 1px solid #f2f2f2;

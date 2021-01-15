@@ -216,7 +216,7 @@ main {
         justify-content: space-around;
         .card {
           background-color: $backgroundcolor1;
-          width: 340px;
+          min-width: 340px;
           height: 460px;
           margin: 20px;
           border: 1px solid $borderColorLightGrey;

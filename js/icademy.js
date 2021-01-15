@@ -231,9 +231,9 @@ var app = new Vue(
           top: 0,
           behavior: "smooth"
         })
-      }
+      },
 
-      }
+    }
    ,
     mounted: function() {
 
