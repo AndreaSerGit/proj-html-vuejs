@@ -32,7 +32,7 @@ a {
   padding : 17px 40px;
   background-color: $primecolor;
   margin : 20px;
-  color: #FFFFFF;
+  color: $textcolor1;
 }
 
 
@@ -93,7 +93,7 @@ a {
   position: fixed;
   right: 0;
   bottom: 55%;
-  box-shadow: 1px 1px 1px 2px #CECECE;
+  box-shadow: 1px 1px 1px 2px $textColorLightGrey;
   &:hover {
     cursor: pointer;
   }
@@ -110,7 +110,7 @@ i {
   }
 }
 .active {
-  color: #FFFFFF;
+  color: $textcolor1;
 }
 
 .selected {
@@ -125,7 +125,7 @@ i {
 }
 
 .fa-times {
-  color: #898989;
+  color: $textColorGrey;
 }
 
 .fade-in {
